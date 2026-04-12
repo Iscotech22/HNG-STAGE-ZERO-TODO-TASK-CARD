@@ -32,14 +32,17 @@ h2{
     font-size: 18px;
     font-weight: bold;
 }
-body{
-    background-color:#f5ecec; ;
+body {
+    display: flex;
+    justify-content: center;  
+    align-items: center;       
+    min-height: 100vh;
+    padding: 20px;
+    background-color: var(--background-color);
 }
 .wrapper{
-    position: absolute;
-    top: 25%;
-    left: 30%;
-    width: 35%;
+    max-width: 480px;
+    margin: 40px auto;
     padding: 30px;
     margin: 40px;
     background-color: var(--background-color);
@@ -136,4 +139,14 @@ ul li{
 li:nth-child(2){
     background-color: var(--purple);
     color: var(--secondary-color);
+}
+
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .wrapper {
+    position: absolute;
+    left:0;
+    right: 10%;
+  }
 }
