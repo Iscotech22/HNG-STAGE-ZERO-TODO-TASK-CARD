@@ -143,10 +143,14 @@ li:nth-child(2){
 
 
 /* MOBILE */
-@media (max-width: 480px) {
+@media (max-width: 320px) {
   .wrapper {
     position: absolute;
     left:0;
     right: 10%;
+  }
+  .todo-header {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
