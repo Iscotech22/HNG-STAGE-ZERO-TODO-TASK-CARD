@@ -1,0 +1,139 @@
+/* Styles for the Todo Task Card */
+
+/* root variables */
+:root{
+    --primary-color: #4A90E2;
+    --secondary-color: #F5F5F5;
+    --text-color: #333;
+    --background-color: #fff;
+    --status-pending: #FFA500;
+    --status-inProgress: #007BFF;
+    --status-completed:  #28A745;
+    --pority-high: #f16a6a;
+    --pority-medium: #FFA500;
+    --pority-low: #28A745;
+    --Grey: #808080;
+    --purple: #800080;
+    --Grey-500: hsl(231, 11%, 63%);
+    --font-family: 'Inter', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+ul li{
+    list-style: none;
+}
+h2{
+    font-family: var(--font-family);
+    font-size: 18px;
+    font-weight: bold;
+}
+body{
+    background-color:#f5ecec; ;
+}
+.wrapper{
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    width: 35%;
+    padding: 30px;
+    margin: 40px;
+    background-color: var(--background-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 10px 3px 15px rgba(0,0,0,0.1);
+}
+/* Inner content  */
+.container{
+    margin: 10px;
+    padding: 1px;
+}
+/* Header section styling */
+header{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--Grey-500);
+}
+/* Checkbox styling */
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+/* status styling */
+strong[data-testid="test-todo-status"]{
+    font-size: 14px;
+    padding-left: 25px;
+    color: var(--status-pending);
+}{}
+/* descrption styling */
+
+article p{
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--Grey-500);
+}
+.description{
+    font-family: var(--font-family);
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+/* Task details styling */
+.task-details{
+    display: flex;
+    gap: 30px;padding-bottom: 10px;
+    border-bottom: 1px solid var(--Grey-500);
+}
+
+/* Tag and button list styling */
+.tag-btn-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding-top: 20px;
+
+}
+/* Due Date styling */
+.due-date{
+    color: var(--primary-color);
+    font-weight: bolder;
+}
+/* Priority styling */
+.priority{
+    padding: 4px 10px;
+    border-radius: 5px;
+    background-color: var(--pority-high);
+    color: var(--background-color);
+}
+.tags{
+    display: flex;
+    gap: 10px;
+}
+button{
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    cursor: pointer;
+}
+ul li{
+    padding: 6px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-colors);
+    border-radius: 5px;
+    color: var(--secondary-color);
+}
+li:nth-child(2){
+    background-color: var(--purple);
+    color: var(--secondary-color);
+}
