@@ -26,7 +26,6 @@
                     <h2 data-testid="test-todo-title">Create Diverse Wireframe</h2>
                     <!-- Status indicator -->
                     <strong data-testid="test-todo-status" aria-label="Task status: pending">
-                        <i class="fa-solid fa-hourglass-start"></i>
                         Pending
                     </strong>
                 </header>
@@ -41,27 +40,27 @@
                         <span data-testid="test-todo-priority" class="priority">High</span>
                     </div>
                     <div role="listitem">
-                        <time data-testid="test-todo-due-date" datetime="2026-02-18T18:00:00">
+                        <time data-testid="test-todo-due-date" datetime="2026-04-16T18:00:00">
                             <i class="fa-solid fa-calendar-days"></i>
-                            Due Feb 18, 2026
+                            Due Apr 13, 2026
                         </time>
                     </div>
                     
                     <div role="listitem" class="due-date">
-                        <time datetime="2026-02-18T18:00:00" data-testid="test-todo-time-remaining">
+                        <time datetime="2026-04-16T18:00:00" data-testid="test-todo-time-remaining">
                             <i class="fa-solid fa-clock"></i>
                             Due in 3 days
                         </time>
                     </div>
                 </div>
-               
-                <!-- list section -->
-                 <div class="tag-btn-list">
+
+                <!-- List and button -->
+                <div class="tag-btn-list">
                     <ul class="tags" role="list" data-testid="test-todo-tags">
                         <li data-testid="test-todo-tag-ux-design">UX Design</li>
                         <li data-testid="test-todo-tag-project-planning">Project Planning</li>
                     </ul>
-                    <div>
+                    <div class="button">
                         <button data-testid="test-todo-edit-button" aria-label="Edit Task">
                             <i class="fa-solid fa-pen-to-square"></i>
                         </button>
@@ -73,6 +72,6 @@
             </div>
         </section>
     </main>
-    <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
