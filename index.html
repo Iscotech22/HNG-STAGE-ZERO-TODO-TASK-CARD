@@ -25,7 +25,7 @@
                     />
                     <h2 data-testid="test-todo-title">Create Diverse Wireframe</h2>
                     <!-- Status indicator -->
-                    <strong data-testid="test-todo-status" aria-label="Task status: pending">
+                    <strong data-testid="test-todo-status" class="status" aria-label="Task status: pending">
                         Pending
                     </strong>
                 </header>
@@ -40,14 +40,14 @@
                         <span data-testid="test-todo-priority" class="priority">High</span>
                     </div>
                     <div role="listitem">
-                        <time data-testid="test-todo-due-date" datetime="2026-04-16T18:00:00">
+                        <time class="dueDate" data-testid="test-todo-due-date" datetime="2026-04-16T18:00:00">
                             <i class="fa-solid fa-calendar-days"></i>
                             Due Apr 13, 2026
                         </time>
                     </div>
                     
                     <div role="listitem" class="due-date">
-                        <time datetime="2026-04-16T18:00:00" data-testid="test-todo-time-remaining">
+                        <time class="timeRemaining" datetime="2026-04-16T18:00:00" data-testid="test-todo-time-remaining">
                             <i class="fa-solid fa-clock"></i>
                             Due in 3 days
                         </time>
@@ -61,10 +61,10 @@
                         <li data-testid="test-todo-tag-project-planning">Project Planning</li>
                     </ul>
                     <div class="button">
-                        <button data-testid="test-todo-edit-button" aria-label="Edit Task">
+                        <button  class="editButton" test-todo-edit-button" aria-label="Edit Task">
                             <i class="fa-solid fa-pen-to-square"></i>
                         </button>
-                        <button data-testid="test-todo-delete-button" aria-label="Delete Task">
+                        <button class="deleteButton" data-testid="test-todo-delete-button" aria-label="Delete Task">
                             <i class="fa-solid fa-trash"></i>
                         </button>
                     </div>

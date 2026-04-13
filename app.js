@@ -1,13 +1,13 @@
 
 // SELECT ELEMENTS
 
-const checkbox = document.querySelector('[data-testid="test-todo-complete-toggle"]');
-const title = document.querySelector('[data-testid="test-todo-title"]');
-const statusUpdate = document.querySelector('[data-testid="test-todo-status"]');
-const timeRemainingEl = document.querySelector('[data-testid="test-todo-time-remaining"]');
-const dueDateEl = document.querySelector('[data-testid="test-todo-due-date"]');
-const editBtn = document.querySelector('[data-testid="test-todo-edit-button"]');
-const deleteBtn = document.querySelector('[data-testid="test-todo-delete-button"]');
+const checkbox = document.querySelector('#complete-task');
+const title = document.querySelector('h2');
+const statusUpdate = document.querySelector('.status');
+const timeRemainingEl = document.querySelector('.timeRemaining');
+const dueDateEl = document.querySelector('.dueDate');
+const editBtn = document.querySelector('.editButton');
+const deleteBtn = document.querySelector('.deleteButton');
 
 
 // SET DUE DATE
