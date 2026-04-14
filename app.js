@@ -56,13 +56,13 @@ setInterval(updateTime, 60000);
 // CHECKBOX TOGGLE
 checkbox.addEventListener("change", () => {
   if (checkbox.checked) {
-    title.style.textDecoration = "line-through";
+    title.style.color  = "green";
     title.style.opacity = "0.6";
 
     statusUpdate.textContent = "Done";
     statusUpdate.style.color = "green";
   } else {
-    title.style.textDecoration = "none";
+    title.style.color= "black";
     title.style.opacity = "1";
 
     statusUpdate.textContent = ` Pending`;

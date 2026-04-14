@@ -75,7 +75,7 @@ strong[data-testid="test-todo-status"]{
     font-size: 14px;
     padding-left: 25px;
     color: var(--status-pending);
-}{}
+}
 /* descrption styling */
 
 article p{
@@ -143,22 +143,31 @@ li:nth-child(2){
 
 
 /* MOBILE */
-@media screen and (max-width: 550px) {
- 
-  .wrapper {
-    display: flex;
-    justify-content: center;
+@media screen and (max-width: 530px) {
+
+  h2 {
+    font-size: 14px;
   }
-  header {
-    
+
+  .due-date {
+    font-size: 13px;
   }
-  .tag-btn-list{
+
+  .task-details {
     display: flex;
     flex-direction: column;
-    gap:20px
+    align-items: flex-start;
+    gap: 6px;
   }
-  .button{
+
+  .tag-btn-list {
     display: flex;
-    gap: 40px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .actions {
+    display: flex;
+    gap: 10px;
   }
 }
